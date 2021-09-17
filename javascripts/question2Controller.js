@@ -21,8 +21,8 @@ function getResult(){
     $("#lga-result-body").html("");
     $.get(appUrl+'api/lga/result/sum/'+lgaID, function (data, status){
         console.log(data);
-        for (let i=0; i<data.lga_result.length; i++){
-            $("#lga-result-body").append("<tr><td>"+data.lga_result[i].party_abbreviation+"</td><td>"+data.lga_result[i].party_score+"</td></tr>");
-        }
+        // for (let i=0; i<data.lga_result.length; i++){
+        //     $("#lga-result-body").append("<tr><td>"+data.lga_result[i].party_abbreviation+"</td><td>"+data.lga_result[i].party_score+"</td></tr>");
+        // }
     })
 }
