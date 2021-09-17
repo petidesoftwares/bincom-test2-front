@@ -24,7 +24,6 @@ function getLgaByState(){
         }else{
             for(let i = 0; i<data.lgas.length; i++){
                 lgaId = data.lgas[i].lga_id;
-                console.log(lgaId);
                 $("#lga-list").append("<li class='li' onclick='getWardsByLga("+lgaId+")'>"+ data.lgas[i].lga_name+"</li>");
             }
         }
